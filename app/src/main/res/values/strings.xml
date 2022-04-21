@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExerciseDialog</string>
+    <string name="fragment_dialog">Fragment Dialog</string>
+    <string name="name">Name</string>
+    <string name="costum_dialog">Costum Dialog</string>
+    <string name="dialog_standard_with_action">Dialog Standard With Action</string>
+    <string name="dialog_standard">Dialog Standard</string>
+</resources>

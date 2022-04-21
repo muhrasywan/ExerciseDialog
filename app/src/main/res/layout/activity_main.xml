@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_dialog_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/dialog_standard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dialog_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/dialog_standard_with_action"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dialog_one"
+        app:layout_constraintStart_toStartOf="@+id/btn_dialog_one"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dialog_one" />
+
+    <Button
+        android:id="@+id/btn_dialog_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/costum_dialog"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dialog_two"
+        app:layout_constraintStart_toStartOf="@+id/btn_dialog_two"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dialog_two" />
+
+    <Button
+        android:id="@+id/btn_dialog_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/fragment_dialog"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dialog_three"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/btn_dialog_three"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dialog_three"
+        app:layout_constraintStart_toStartOf="@+id/btn_dialog_three"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dialog_three" />
+</androidx.constraintlayout.widget.ConstraintLayout>
